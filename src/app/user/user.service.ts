@@ -22,7 +22,7 @@ export class UserService {
 
   }
 
-  getUser(){
+  getUser(user: User){
 
   }
 }
