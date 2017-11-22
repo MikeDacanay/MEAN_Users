@@ -1,6 +1,10 @@
 <h3>UserNewComponent</h3>
-{{ newUser | json }}
+{{newUser | json}}
+
 <form (submit)='create()'>
-	<input type='text'>
+	<input type='text'
+	name="first_name"
+	[(ngModel)]='newUser.first_name'
+	>	
 	<input type='submit'>
 </form>

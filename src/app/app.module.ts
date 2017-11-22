@@ -1,7 +1,7 @@
 import { UserService } from './user/user.service'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
@@ -17,6 +17,7 @@ import { UserNewComponent } from './user/user-new/user-new.component';
     UserNewComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule
   ],
   providers: [UserService],
