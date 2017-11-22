@@ -4,12 +4,6 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class UserService {
 
-  test =  [
-    new User(1,"First","Last","email@emaigmas.com"),
-    new User(2,"third","Last","email@emaigmas.com"),
-    new User(3,"second","Last","email@emaigmas.com")
-  ];
-
   constructor() { }
 
   create(user: User){
